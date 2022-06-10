@@ -84,7 +84,7 @@ get_header(); ?>
                                     <input
                                     class="c-label-checkbox d-none"
                                     type="checkbox"
-                                    id="jogo-panela">
+                                    id="jogo-panelaa">
 
                                     <label
                                     class="c-label-checkbox u-font-size-12 u-font-weight-medium text-center u-color-folk-white py-2 px-3"
