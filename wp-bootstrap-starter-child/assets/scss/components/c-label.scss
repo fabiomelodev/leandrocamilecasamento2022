@@ -1,0 +1,19 @@
+$component-name: 'c-label';
+
+.#{$component-name} {
+    &-checkbox {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        border: 1px solid $color-folk-white;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    &-checkbox {
+        &:checked + .#{$component-name} {
+            &-checkbox {
+                color: $color-folk-purple;
+                background-color: $color-folk-white;
+            }
+        }
+    }
+}

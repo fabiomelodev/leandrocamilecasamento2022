@@ -1,0 +1,74 @@
+$layout-name: 'l-banner';
+
+.#{$layout-name} {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .2;
+        position: absolute;
+        background-color: $color-folk-black;
+        z-index: 9;
+    }
+
+    &__navbar {
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 999;
+    }
+
+    &__gif {
+        height: 100% !important;
+
+        @media screen and (max-width: 991px) {
+            height: 100vh !important;
+            object-fit: cover;
+        }
+    }
+
+    &__box {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 99;
+    }
+
+    &__title {
+        font-size: 5rem;
+
+        @media screen and (max-width: 991px) {
+            font-size: 3.375rem;
+        }
+    }
+
+    &__phares {
+        font-size: 2.3125rem;
+    }
+
+    &__date {
+        font-size: 3.5rem;
+    }
+
+    &__day {
+        font-size: 1.875rem;
+    }
+
+    &__address {
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        font-size: 1.125rem;
+    }
+}
